@@ -1,0 +1,91 @@
+html, body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background-color: white;
+    color: white;
+}
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif
+}
+.link-card{
+    position: relative;
+    margin: 5% auto 0 auto;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    background: black;
+    padding: 40px 20px 100px 20px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.link-card p {
+    margin: 0;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 75px;
+
+    /* Replace in the url with your own image, make sure the image is in the same folder */
+    background-image: url(profile.jpg);
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;  
+}
+.link-card .buttons{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    width: 70%; height: 50px;
+    outline: none;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(64, 64, 64);
+    align-items: center;
+    justify-content: center;
+    margin: 5px auto;
+    position: relative;
+}
+.button-links{
+    width: 100%;
+    position: relative;;
+}
+.buttons i{
+    text-align: center;
+    justify-items: center;
+    position: absolute;
+    left: 2%;
+    font-size: 25px;
+    padding: 4px;
+    border-radius: 5px;
+}
+.icon-links{
+    width: 70%;
+    margin: 20px auto 40px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.icon-links *{
+    color: white;
+    font-size: 25px;
+}
+footer{
+    position: absolute;
+    bottom: 1%;
+}
+footer i{
+    color: white;
+}
+
+@media (max-width: 800px) {
+    .link-card{
+        width: 100%;
+        margin: 0;
+        border-radius: 0%;
+    }
+
+}
